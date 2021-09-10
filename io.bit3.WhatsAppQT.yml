@@ -33,4 +33,8 @@ modules:
     url: https://gitlab.com/bit3/whatsappqt.git
     tag: v1.0.2
     commit: 62ba68a4a3afe228e2605b402efb6fb64cd69316
-
+    x-checker-data:
+      type: json
+      url: https://api.github.com/repos/bit3/whatsappqt/releases/latest
+      version-query: .tag_name
+      url-query: .assets | first | .browser_download_url
